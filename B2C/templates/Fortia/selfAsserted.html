@@ -975,7 +975,9 @@
     }
 
     div.buttons>button.sendCode,
-    div.buttons>button.verifyCode {
+    div.buttons>button.verifyCode,
+    div.buttons>button.sendButton,
+    div.buttons>button.verifyButton {
       background: rgb(150, 108, 255);
       background: linear-gradient(90deg, rgba(150, 108, 255, 1) 0%, rgba(0, 203, 248, 1) 50%, rgba(222, 119, 255, 1) 100%);
     }
@@ -1000,6 +1002,10 @@
 
     div.attrEntry>.error.show+input {
       border-color: red !important;
+    }
+
+    div.attrEntry>div>div{
+      margin-bottom: 16px!important;
     }
 
     /* endinject */

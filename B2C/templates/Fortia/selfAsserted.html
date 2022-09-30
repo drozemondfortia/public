@@ -102,8 +102,18 @@
       background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/weibo.svg);
     }
 
+    /* .buttons #cancel:before {
+      padding: 10px;
+      vertical-align: sub;
+      zoom: 90%;
+      display: inline-block
+    } */
+
     .buttons #cancel:before {
-      content: url(https://login.microsoftonline.com/templates/src/images/left-arrow.svg);
+      /* content: url(https://login.microsoftonline.com/templates/src/images/left-arrow.svg); */
+      content: "<";
+      font-size: 22px;
+      left: -18px;
     }
   </style>
   <style id="idpselector">
@@ -332,6 +342,8 @@
     }
 
     .buttons #cancel {
+      display: flex;
+      align-items: center;
       padding: 0;
       margin-left: auto;
       background: 0 0;
@@ -340,22 +352,16 @@
       position: absolute;
       background-color: transparent;
       top: 2px;
-      left: 3.5%;
+      /* left: 3.5%; */
       font-size: 1em;
-      color: #505050;
+      color: #a3b1d1;
       box-shadow: none;
-      text-align: left
+      text-align: left;
+      margin-left: 18px;
     }
 
     .buttons #cancel:hover {
       color: #000 !important
-    }
-
-    .buttons #cancel:before {
-      padding: 10px;
-      vertical-align: sub;
-      zoom: 90%;
-      display: inline-block
     }
 
     #attributeList ul {
@@ -718,7 +724,7 @@
     .self_asserted_container .row .panel-default .panel-body img.companyLogo {
       display: block;
       height: 70px;
-      margin-top: 1rem
+      margin-top: 3rem
     }
 
     .self_asserted_container .row .panel-default .panel-body .branding h1 {

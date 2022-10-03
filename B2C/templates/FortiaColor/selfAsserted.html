@@ -1015,6 +1015,24 @@
       margin-bottom: 16px !important;
     }
 
+    .logo-container {
+      position: relative;
+    }
+
+    .logo-container img.companyLogo {
+      opacity: 0;
+    }
+
+    .logo-container::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 38px;
+      background-image: url("https://fortia.fr/wp-content/themes/t-fortia/assets/img/logo-fortia.png");
+      background-size: contain;
+      left: 0;
+    }
+
     /* endinject */
   </style>
 
@@ -1030,8 +1048,10 @@
       <div class="col-lg-6">
         <div class="panel panel-default">
           <div class="panel-body">
-            <img class="companyLogo" data-tenant-branding-logo="true"
-              src="https://login.microsoftonline.com/templates/src/images/logo.svg" alt="Company Logo">
+            <div class="logo-container">
+              <img class="companyLogo" data-tenant-branding-logo="true"
+                src="https://login.microsoftonline.com/templates/src/images/logo.svg" alt="Company Logo">
+            </div>
             <div id="api" role="main">
             </div>
           </div>

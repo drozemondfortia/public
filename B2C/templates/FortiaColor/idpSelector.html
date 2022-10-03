@@ -1312,6 +1312,19 @@
       background-color: #eee
     }
 
+    #companyLogo>img {
+      opacity: 0;
+      position: relative;
+    }
+
+    #companyLogo::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 80px;
+      background-image: url("https://fortia.fr/wp-content/themes/t-fortia/assets/img/logo-fortia.png");
+    }
+
     /* endinject */
   </style>
 
@@ -1327,7 +1340,7 @@
       <div class="col-lg-6">
         <div class="panel panel-default">
           <div class="panel-body">
-            <img class="companyLogo test-change" data-tenant-branding-logo="true"
+            <img class="companyLogo" data-tenant-branding-logo="true"
               src="https://fortia.fr/wp-content/themes/t-fortia/assets/img/logo-fortia.png" alt="Company Logo">
             <div id="api" role="main">
             </div>

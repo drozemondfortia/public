@@ -1312,12 +1312,15 @@
       background-color: #eee
     }
 
-    img.companyLogo {
-      opacity: 0;
+    .logo-container {
       position: relative;
     }
 
-    img.companyLogo::after {
+    .logo-container img.companyLogo {
+      opacity: 0;
+    }
+
+    .logo-container::after {
       content: "";
       position: absolute;
       width: 220px;
@@ -1340,8 +1343,10 @@
       <div class="col-lg-6">
         <div class="panel panel-default">
           <div class="panel-body">
-            <img class="companyLogo" data-tenant-branding-logo="true"
-              src="https://fortia.fr/wp-content/themes/t-fortia/assets/img/logo-fortia.png" alt="Company Logo">
+            <div class="logo-container">
+              <img class="companyLogo" data-tenant-branding-logo="true"
+                src="https://fortia.fr/wp-content/themes/t-fortia/assets/img/logo-fortia.png" alt="Company Logo">
+            </div>
             <div id="api" role="main">
             </div>
           </div>

@@ -986,7 +986,9 @@
     div.buttons>button.verifyCode,
     div.buttons>button.sendButton,
     div.buttons>button.verifyButton {
-      background: #101249;
+      background: #1ad0f8;
+      background: linear-gradient(to right, #1ad0f8 0, #3cfbd9 100%);
+      color: #101249;
     }
 
     div.buttons>button#continue {
@@ -1026,7 +1028,7 @@
       flex-direction: column;
     }
 
-    .logo-container {
+    /* .logo-container {
       position: relative;
     }
 
@@ -1046,7 +1048,7 @@
       top: 40px;
       margin-left: auto;
       margin-right: auto;
-    }
+    } */
 
     .powered-by-fortia {
       margin: 28px 0 0 0 !important;
@@ -1073,10 +1075,8 @@
       <div class="col-lg-6">
         <div class="panel panel-default">
           <div class="panel-body">
-            <div class="logo-container">
-              <img class="companyLogo" data-tenant-branding-logo="true"
-                src="https://login.microsoftonline.com/templates/src/images/logo.svg" alt="Company Logo">
-            </div>
+            <img class="companyLogo" data-tenant-branding-logo="true"
+              src="https://login.microsoftonline.com/templates/src/images/logo.svg" alt="Company Logo">
             <div id="api" role="main">
             </div>
             <p class="powered-by-fortia">

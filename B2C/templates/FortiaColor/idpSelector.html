@@ -890,11 +890,10 @@
     }
 
     .unified_container .row .panel-default #api .localAccount .entry .buttons button {
-      float: right;
       background-image: none;
-      /* background: rgb(150, 108, 255);
-      background: linear-gradient(90deg, rgba(150, 108, 255, 1) 0%, rgba(0, 203, 248, 1) 50%, rgba(222, 119, 255, 1) 100%); */
-      background: #101249;
+      background: #1ad0f8;
+      background: linear-gradient(to right, #1ad0f8 0, #3cfbd9 100%);
+      color: #101249;
       border: none;
       border-radius: .2rem;
       cursor: pointer;
@@ -917,7 +916,6 @@
       -ms-touch-action: manipulation;
       -ms-user-select: none;
       -webkit-user-select: none;
-      color: #fff;
       width: 40%
     }
 
@@ -1312,7 +1310,7 @@
       background-color: #eee
     }
 
-    .logo-container {
+    /* .logo-container {
       position: relative;
     }
 
@@ -1328,10 +1326,10 @@
       background-image: url("https://fortia.fr/wp-content/themes/t-fortia/assets/img/logo-fortia.png");
       background-size: contain;
       left: 0;
-    }
+    } */
 
     .powered-by-fortia {
-      margin: 28px 0 0 0!important;
+      margin: 28px 0 0 0 !important;
       font-size: 12px;
       color: #b1b1b1;
     }
@@ -1351,10 +1349,8 @@
       <div class="col-lg-6">
         <div class="panel panel-default">
           <div class="panel-body">
-            <div class="logo-container">
-              <img class="companyLogo" data-tenant-branding-logo="true"
-                src="https://login.microsoftonline.com/templates/src/images/logo.svg" alt="Company Logo">
-            </div>
+            <img class="companyLogo" data-tenant-branding-logo="true"
+              src="https://login.microsoftonline.com/templates/src/images/logo.svg" alt="Company Logo">
             <div id="api" role="main">
             </div>
             <p class="powered-by-fortia">
